@@ -1,0 +1,74 @@
+# peterson number A number is said to be peterson if the sum of factorials of each digit is equal to the sum of the 
+# number itself we have to check the number (n) 145 is peterson or not.
+# number = 145
+no=int(input("enter no: "))
+rev=0
+while no>0:
+    rem=no%10
+    rev=rev*10+rem
+    no=no//10
+    print("reverse no is: ",rev)
+
+# count no of digits 
+n =int(input("enter no: "))
+count = 0
+while n > 0:
+    n = n // 10
+    count = count + 1
+print("Number of digits: ", count)
+
+# sum of digit
+n = int(input("enter no: "))
+sum = 0
+while n > 0:
+    digit = n % 10
+    sum = sum + digit
+    n = n // 10
+print("Sum of digits: ", sum)
+
+#check no is palindrome
+n = int(input("enter no: "))
+temp = n
+rev = 0
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+if rev == temp:
+    print("Palindrome number")
+else:
+    print("Not a palindrome number")
+
+#check no is Armstrong
+n = int(input("Enter number: "))
+temp = n
+count = 0
+while temp > 0:
+    temp = temp // 10
+    count = count + 1
+temp = n
+sum = 0
+while temp > 0:
+    digit = temp % 10
+    sum = sum + digit ** count
+    temp = temp // 10
+if sum == n:
+    print("Armstrong number")
+else:
+    print("Not Armstrong number")  #153,370,371,407,9474 
+
+#all Armstrong numbers from 1 to 10000 
+for n in range(1, 10001):
+    temp = n
+    count = 0
+    while temp > 0:
+        temp = temp // 10
+        count = count + 1
+    temp = n
+    sum = 0
+    while temp > 0:
+        digit = temp % 10
+        sum = sum + digit ** count
+        temp = temp // 10
+    if sum == n:
+        print(n)

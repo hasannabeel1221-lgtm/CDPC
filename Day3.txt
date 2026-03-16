@@ -1,0 +1,120 @@
+#1111
+#2222
+#3333
+#4444
+for i in range(1,5):
+    for j in range(1,5):
+        print(i,end=" ")
+    print()
+
+#1 2 3 4 
+#1 2 3 4
+#1 2 3 4
+#1 2 3 4
+for i in range(1,5):
+    for j in range(1,5):
+        print(j,end=" ")
+    print()
+
+#1   2  3  4
+#5   6  7  8
+#9  10 11 12
+#13 14 15 16
+n=1
+for i in range(1,5):
+    for j in range(1,5):
+        print(n,end="\t")
+        n=n+1
+    print()
+
+#ABCD
+#EFGH
+#IJKL
+#MNOP
+n=65
+for i in range(1,5):
+    for j in range(1,5):
+        print(chr(n),end="")
+        n=n+1
+    print()
+
+#1
+#22
+#333
+#4444
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+
+#****
+#***
+#**
+#*
+for i in range(4,0,-1):
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
+
+#list
+ls=[]
+print(type(ls))
+print(ls)
+ls=[1,2,3,4,6,7]
+print(ls)
+
+#0 1 2 3 4
+# [1, 2, 3, 4, 6, 7]
+ls=[1,2,3,4,6,7]
+print(ls)
+for i in range(len(ls)):
+    print(ls[i])
+for i in ls:
+    print(i)
+
+#add and remove no. to list
+ls=[1,2,3,4,6,7]
+print(ls)
+ls.append(66)
+ls.append(69)
+ls.pop(3)
+ls[6]=99
+
+#
+ls=[1,2,3,4,6,7]
+print(ls)
+print(ls[4])
+print(ls[0])
+print(ls[-1])
+
+#   0 1 2 3 4 5 6 7
+ls=[1,2,3,4,6,7,8,9]
+print(ls[1:5])
+print(ls[0:4])
+print(ls[0:])
+print(ls[2:])
+print(ls[:5])
+print(ls[:])
+print(ls[::1])
+print(ls[2:6:1])
+print(ls[0:6:2])
+print(ls[::-1])
+
+#name
+ls = ['J','I','D','N','Y','A','S','A']
+print(ls[::-1])
+
+#
+s='jidnyasa'
+print(s[::-1])
+
+#reverse no
+no=1234
+no=str(no)
+no=no[::-1]
+print(no)
+
+
+
+
+

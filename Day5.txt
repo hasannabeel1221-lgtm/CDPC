@@ -1,0 +1,106 @@
+#solve me first
+def solveMeFirst(a,b):
+    return a+b
+    return sum
+
+num1 = int(input())
+num2 = int(input())
+res = solveMeFirst(num1,num2)
+print(res)
+
+# #simplearraysum
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'simpleArraySum' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY ar as parameter.
+#
+
+def simpleArraySum(ar):
+    total = 0
+    for i in ar:
+        total = total + i
+    return total
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    ar_count = int(input().strip())
+
+    ar = list(map(int, input().rstrip().split()))
+
+    result = simpleArraySum(ar)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
+# # enter four no. and find max no.
+n1=int(input("enter value: "))
+n2=int(input("enter value: "))
+n3=int(input("enter value: "))
+n4=int(input("enter value: "))
+n5=int(input("enter value: "))
+print("Maximum number:", max(n1, n2, n3, n4))
+
+# or
+n1=int(input("enter value: "))
+n2=int(input("enter value: "))
+n3=int(input("enter value: "))
+n4=int(input("enter value: "))
+n5=int(input("enter value: "))
+max=n1
+if max<n2:
+    max=n2
+if max<n3:
+    max=n3
+if max<n4:
+    max=n4
+print("maximum= ",max)
+
+# or
+arr = [5, 3, 9, 2, 8]
+maximum = arr[0]
+minimum = arr[0]
+
+for num in arr:
+    if num > maximum:
+        maximum = num
+    if num < minimum:
+        minimum = num
+
+print("Maximum:", maximum)
+print("Minimum:", minimum)
+
+#or
+arr = [5, 3, 9, 2, 8]
+maximum = arr[0]
+minimum = arr[0]
+for i in range(1,len(arr)):
+    if maximum<arr[i]:
+        maximum=arr[i]
+    if minimum<arr[i]:
+        minimum=arr[i]
+print("Maximum:", maximum)
+print("Minimum:", minimum)
+
+#check leap year
+year = int(input("Enter a year: "))
+if year % 100 != 0: 
+    if year % 4 == 0:
+        print(year, "non century leap year")
+    else:
+        print(year, "is not a Leap Year")
+else:
+    if year%400==0:
+        print(year, "century leap year")
+    else:
+        print(year, "is not a Leap Year")
